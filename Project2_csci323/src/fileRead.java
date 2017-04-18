@@ -1,0 +1,41 @@
+//import java.io.File;
+//import java.io.FileNotFoundException;
+//import java.util.ArrayList;
+//import java.util.Scanner;
+//
+//public class fileRead {
+//	int[] array;
+//	public int[] reader() throws FileNotFoundException{
+//		ArrayList aList = new ArrayList();
+//		for(int p=8;p<16835;p=p*2){
+//			String file1 = "Num//Num"+p+".txt"; //read file using 'p' as a integer 
+//			Scanner scanner = new Scanner(new File(file1));
+//
+//			while(scanner.hasNext()){
+//				int input = scanner.nextInt();
+//				aList.add(input);
+//			}   //scanner while 
+//			
+//			int[] array = new int[aList.size()]; //array with size of arrayList
+//			
+//			for(int k=0;k<aList.size();k++){ //copy arrayList data in Array
+//				array[k]=(int) aList.get(k);
+//			} //input arraylist in array[int]
+//			aList.clear();
+//	
+//			scanner.close();
+//		}//big for loop
+//		return array;
+//	}//reader
+//	
+//	public int findMax(){
+//		int max=0;int temp =0;
+//		for(int i=0;i<array.length;i++){
+//			temp =array[i];
+//			if(max<temp)
+//				
+//			
+//		}
+//		return max;
+//	}
+//}

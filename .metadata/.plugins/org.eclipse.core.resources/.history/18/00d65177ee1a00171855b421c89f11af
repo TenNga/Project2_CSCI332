@@ -1,0 +1,38 @@
+
+public class CountingSort {
+	 	        
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] A = new int[9];
+	    int[] B = new int[9];
+	    int k = 5;
+	    int[] C = new int[k];
+		for(int i=0;i<B.length;i++){
+            System.out.print(B[i]+" ");
+
+        }System.out.println();
+        countingSort(A,B,C,k);
+        for(int i=0;i<B.length;i++){
+           System.out.print(B[i]+" ");
+
+        }System.out.println();
+	}
+	public static void countingSort(int[]A,int[]B,int[]C,int k){
+        for(int i=0;i<k;i++){
+            C[i] =0;
+        }
+        for(int j=0;j<A.length;j++){
+            C[A[j]] = C[A[j]]+1;
+        }
+        for(int i=0;i<=k-1;i++ ){ System.out.println("HERE");
+            C[i] = C[i]+C[i-1];
+           
+        }
+        for(int j =A.length-1;j<=0;j--){
+            B[C[A[j]]] = A[j];
+            C[A[j]] = C[A[j]] -1;
+        }
+
+    }
+
+}

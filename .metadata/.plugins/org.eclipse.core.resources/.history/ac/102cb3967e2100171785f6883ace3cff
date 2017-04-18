@@ -1,0 +1,19 @@
+import java.io.FileNotFoundException;
+
+public class project2 {
+public static int[] A;
+public static int[] B = new int[A.length];
+public static int k = 9;
+	public static void main(String[] args) throws FileNotFoundException {
+		fileRead fRead = new fileRead();
+		CountingSort cSort = new CountingSort();
+		
+		int[]A = fRead.reader();
+		int[] B = new int[A.length];
+	    cSort.countingSort(A,B,k);
+	     
+	}
+	
+	
+
+}
